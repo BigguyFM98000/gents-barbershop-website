@@ -1,5 +1,6 @@
 import barbercut from "../assets/salah-regouane-unsplash.jpg";
 import { useNavigate } from "react-router-dom";
+import { motion } from "motion/react"
 
 function HomePage() {
   const navigate = useNavigate();
@@ -7,7 +8,8 @@ function HomePage() {
   return (
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img
+        <motion.img
+        whileHover={{y: -10}}
           alt="A man getting haircut"
           src={barbercut}
           width="3853"
@@ -30,7 +32,7 @@ function HomePage() {
           <p className="py-6">
             New here? Enjoy R50 off your first appointment.
           </p>
-          <button className="btn btn-primary text-lg" onClick={() => navigate("contact")}>Book Appointment</button>
+          <motion.button whileHover={{y: -10}} className="btn btn-primary text-lg" onClick={() => navigate("contact")}>Book Appointment</motion.button>
         </div>
       </div>
     </div>

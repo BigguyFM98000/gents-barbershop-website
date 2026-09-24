@@ -2,20 +2,24 @@ import { Fragment } from "react";
 import beardtrim from "../assets/allef-vinicius-unsplash.jpg";
 import beardcut from "../assets/antonio-reynoso-unsplash.jpg";
 import classichaircut from "../assets/michael-demoya-unsplash.jpg";
-import kidscut from "../assets/sinval-carvalho-unsplash.jpg";
+import kidscut from "../assets/sinval-carvalh-unsplash.jpg";
 import premiumhaircut from "../assets/andrea-donato-unsplash.jpg";
 import chiskop from "../assets/stefan-schauberger-unsplash.jpg";
+import { motion } from "motion/react";
 
 function ServicesPage() {
   return (
     <Fragment>
         <h2 className="text-center text-bold text-4xl py-6">Our Services.</h2>
     <section className="flex flex-row justify-around items-center gap-6 flex-wrap">
-      <div className="card bg-base-900 w-96 shadow-sm border-solid border-2 border-gray-100">
+      <motion.div whileHover={{y: -10}} className="card bg-base-900 w-96 shadow-sm border-solid border-2 border-gray-100">
         <figure className="px-10 pt-10">
           <img
             src={beardtrim}
             alt="A man getting beard trim"
+            width="4858"
+            height="3239"
+            loading="lazy"
             className="rounded-xl"
           />
         </figure>
@@ -24,12 +28,15 @@ function ServicesPage() {
           <p className="text-lg font-bold">Price: R50</p>
           
         </div>
-      </div>
-      <div className="card bg-base-100 w-96 shadow-sm border-solid border-2 border-gray-100">
+      </motion.div>
+      <motion.div whileHover={{y: -10}} className="card bg-base-100 w-96 shadow-sm border-solid border-2 border-gray-100">
         <figure className="px-10 pt-10">
           <img
             src={beardcut}
             alt="A man getting beard cut"
+            width="6016"
+            height="4000"
+            loading="lazy"
             className="rounded-xl"
           />
         </figure>
@@ -40,12 +47,15 @@ function ServicesPage() {
           </p>
           
         </div>
-      </div>
-      <div className="card bg-base-100 w-96 shadow-sm border-solid border border-gray-100">
+      </motion.div>
+      <motion.div whileHover={{y: -10}} className="card bg-base-100 w-96 shadow-sm border-solid border border-gray-100">
         <figure className="px-10 pt-10">
           <img
             src={classichaircut}
             alt="Man getting haircut"
+            width="5184"
+            height="3456"
+            loading="lazy"
             className="rounded-xl"
           />
         </figure>
@@ -55,12 +65,15 @@ function ServicesPage() {
            Price: R75
           </p>
         </div>
-      </div>
-      <div className="card bg-base-100 w-96 shadow-sm border-solid border border-gray-100">
+      </motion.div>
+      <motion.div whileHover={{y: -10}} className="card bg-base-100 w-96 shadow-sm border-solid border border-gray-100">
         <figure className="px-10 pt-10">
           <img
             src={kidscut}
             alt="Man getting buzz cut"
+            width="4794"
+            height="3835"
+            loading="lazy"
             className="rounded-xl h-[30vh]"
           />
         </figure>
@@ -70,12 +83,15 @@ function ServicesPage() {
            Price: R65
           </p>
         </div>
-      </div>
-      <div className="card bg-base-100 w-96 shadow-sm border-solid border border-gray-100">
+      </motion.div>
+      <motion.div whileHover={{y: -10}} className="card bg-base-100 w-96 shadow-sm border-solid border border-gray-100">
         <figure className="px-10 pt-10">
           <img
             src={premiumhaircut}
             alt="Cutting electric scissors"
+            width="5760"
+            height="3840"
+            loading="lazy"
             className="rounded-xl"
           />
         </figure>
@@ -85,12 +101,15 @@ function ServicesPage() {
            Price: R100
           </p>
         </div>
-      </div>
-      <div className="card bg-base-100 w-96 shadow-sm border-solid border border-gray-100">
+      </motion.div>
+      <motion.div whileHover={{y: -10}} className="card bg-base-100 w-96 shadow-sm border-solid border border-gray-100">
         <figure className="px-10 pt-10">
           <img
             src={chiskop}
             alt="Chiskop scissors"
+            width="6240"
+            height="4160"
+            loading="lazy"
             className="rounded-xl"
           />
         </figure>
@@ -100,7 +119,7 @@ function ServicesPage() {
            Price: R50
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
     </Fragment>
   );
