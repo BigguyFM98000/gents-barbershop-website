@@ -10,9 +10,9 @@ import { motion } from "motion/react";
 function ServicesPage() {
   return (
     <Fragment>
-        <h2 className="text-center text-bold text-4xl py-6">Our Services.</h2>
-    <section className="flex flex-row justify-around items-center gap-6 flex-wrap">
-      <motion.div whileHover={{y: -10}} className="card bg-base-900 w-96 shadow-sm border-solid border-2 border-gray-100">
+        <h2 className="py-6 text-center text-3xl text-bold sm:text-4xl">Our Services.</h2>
+    <section className="flex flex-row flex-wrap items-center justify-around gap-6 py-6">
+      <motion.div whileHover={{y: -10}} className="card w-full max-w-96 bg-base-900 shadow-sm border-solid border-2 border-gray-100">
         <figure className="px-10 pt-10">
           <img
             src={beardtrim}
@@ -29,7 +29,7 @@ function ServicesPage() {
           
         </div>
       </motion.div>
-      <motion.div whileHover={{y: -10}} className="card bg-base-100 w-96 shadow-sm border-solid border-2 border-gray-100">
+      <motion.div whileHover={{y: -10}} className="card w-full max-w-96 bg-base-100 shadow-sm border-solid border-2 border-gray-100">
         <figure className="px-10 pt-10">
           <img
             src={beardcut}
@@ -48,7 +48,7 @@ function ServicesPage() {
           
         </div>
       </motion.div>
-      <motion.div whileHover={{y: -10}} className="card bg-base-100 w-96 shadow-sm border-solid border border-gray-100">
+      <motion.div whileHover={{y: -10}} className="card w-full max-w-96 bg-base-100 shadow-sm border-solid border border-gray-100">
         <figure className="px-10 pt-10">
           <img
             src={classichaircut}
@@ -66,7 +66,7 @@ function ServicesPage() {
           </p>
         </div>
       </motion.div>
-      <motion.div whileHover={{y: -10}} className="card bg-base-100 w-96 shadow-sm border-solid border border-gray-100">
+      <motion.div whileHover={{y: -10}} className="card w-full max-w-96 bg-base-100 shadow-sm border-solid border border-gray-100">
         <figure className="px-10 pt-10">
           <img
             src={kidscut}
@@ -84,7 +84,7 @@ function ServicesPage() {
           </p>
         </div>
       </motion.div>
-      <motion.div whileHover={{y: -10}} className="card bg-base-100 w-96 shadow-sm border-solid border border-gray-100">
+      <motion.div whileHover={{y: -10}} className="card w-full max-w-96 bg-base-100 shadow-sm border-solid border border-gray-100">
         <figure className="px-10 pt-10">
           <img
             src={premiumhaircut}
@@ -102,7 +102,7 @@ function ServicesPage() {
           </p>
         </div>
       </motion.div>
-      <motion.div whileHover={{y: -10}} className="card bg-base-100 w-96 shadow-sm border-solid border border-gray-100">
+      <motion.div whileHover={{y: -10}} className="card w-full max-w-96 bg-base-100 shadow-sm border-solid border border-gray-100">
         <figure className="px-10 pt-10">
           <img
             src={chiskop}

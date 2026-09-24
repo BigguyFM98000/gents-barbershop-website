@@ -6,8 +6,8 @@ function HomePage() {
   const navigate = useNavigate();
 
   return (
-    <div className="hero bg-base-200 min-h-screen">
-      <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="hero min-w-0 bg-base-200 px-2 py-8 sm:px-6">
+      <div className="hero-content min-w-0 flex-col lg:flex-row-reverse">
         <motion.img
         whileHover={{y: -10}}
           alt="A man getting haircut"
@@ -15,10 +15,10 @@ function HomePage() {
           width="3853"
           height="5780"
           loading="lazy"
-          className="h-[70vh] max-w-sm rounded-lg shadow-2xl"
+          className="h-auto max-h-[70vh] w-full max-w-sm rounded-lg object-cover shadow-2xl"
         />
-        <div>
-          <h1 className="text-5xl font-bold">Welcome to Gent's Barbershop</h1>
+        <div className="min-w-0">
+          <h1 className="text-3xl font-bold sm:text-5xl">Welcome to Gent's Barbershop</h1>
           <p className="text-lg py-2"><i>Premium cuts, fades and beard grooming in the heart of Thohoyandou.</i></p>
 
           <h2 className="py-6 text-2xl font-bold">Open Hours</h2>

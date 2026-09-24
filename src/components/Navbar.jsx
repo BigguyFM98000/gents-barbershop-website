@@ -4,7 +4,7 @@ function Navbar() {
     const navigate = useNavigate();
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar min-w-0 bg-base-100 px-2 shadow-sm sm:px-4">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,7 +43,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Gent's Barbershop</a>
+        <a className="btn btn-ghost min-w-0 px-2 text-base sm:text-xl">Gent's Barbershop</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-4 text-lg">
@@ -62,7 +62,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="btn text-lg" onClick={() => navigate("contact")}>Book Now</button>
+        <button className="btn px-2 text-sm sm:text-lg" onClick={() => navigate("contact")}>Book Now</button>
       </div>
     </div>
   );
