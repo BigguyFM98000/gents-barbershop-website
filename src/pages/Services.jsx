@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import beardtrim from "../assets/allef-vinicius-unsplash.jpg";
 import beardcut from "../assets/antonio-reynoso-unsplash.jpg";
 import classichaircut from "../assets/michael-demoya-unsplash.jpg";
-import kidscut from "../assets/nate-johnston-unsplash.jpg";
+import kidscut from "../assets/sinval-carvalho-unsplash.jpg";
 import premiumhaircut from "../assets/andrea-donato-unsplash.jpg";
 import chiskop from "../assets/stefan-schauberger-unsplash.jpg";
 
