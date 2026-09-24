@@ -10,6 +10,9 @@ function HomePage() {
         <img
           alt="A man getting haircut"
           src={barbercut}
+          width="3853"
+          height="5780"
+          loading="lazy"
           className="h-[70vh] max-w-sm rounded-lg shadow-2xl"
         />
         <div>
