@@ -10,7 +10,7 @@ function LayoutPage() {
                 <Navbar/>
                 <hr/>
             </header>
-            <main>
+            <main className="p-6">
                 <Outlet/>
             </main>
             <hr/>
