@@ -8,10 +8,12 @@ function LayoutPage() {
         <Fragment>
             <header>
                 <Navbar/>
+                <hr/>
             </header>
             <main>
                 <Outlet/>
             </main>
+            <hr/>
             <Footer/>
         </Fragment>
     )

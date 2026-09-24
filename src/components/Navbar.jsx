@@ -1,4 +1,8 @@
+import { Link, useNavigate } from "react-router-dom";
+
 function Navbar() {
+    const navigate = useNavigate();
+
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -26,16 +30,16 @@ function Navbar() {
             className="menu menu-lg text-lg dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a>Services</a>
+              <Link to="services">Services</Link>
             </li>
             <li>
-              <a>About</a>
+              <Link to="about">About</Link>
             </li>
             <li>
-              <a>Contact</a>
+              <Link to="contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -44,21 +48,21 @@ function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-4 text-lg">
           <li>
-              <a>Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a>Services</a>
+              <Link to="services">Services</Link>
             </li>
             <li>
-              <a>About</a>
+              <Link to="about">About</Link>
             </li>
             <li>
-              <a>Contact</a>
+              <Link to="contact">Contact</Link>
             </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn text-lg">Book Now</a>
+        <button className="btn text-lg" onClick={() => navigate("contact")}>Book Now</button>
       </div>
     </div>
   );
