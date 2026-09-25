@@ -32,7 +32,7 @@ function HomePage() {
           <p className="py-6">
             New here? Enjoy R50 off your first appointment.
           </p>
-          <motion.button whileHover={{y: -10}} className="btn btn-primary text-lg" onClick={() => navigate("contact")}>Book Appointment</motion.button>
+          <motion.button whileHover={{y: -10}} className="btn btn-primary text-lg" onClick={() => navigate("contact")}>Continue to Booking</motion.button>
         </div>
       </div>
     </div>
