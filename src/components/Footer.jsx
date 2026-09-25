@@ -42,9 +42,10 @@ function Footer() {
         </nav>
         <nav>
           <h6 className="footer-title font-bold">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <Link to="contact" className="link link-hover">Terms of use</Link>
+          <h6 className="footer-title font-bold mt-4">Contact Details</h6>
+          <p className="text-md">Email: support@gentsbarbershop.com</p>
+          <p className="text-md">Tel: 0748965682</p>
         </nav>
       </footer>
       <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
