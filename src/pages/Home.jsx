@@ -1,4 +1,4 @@
-import barbercut from "../assets/salah-regouane-unsplash.jpg";
+import barbercut from "../assets/salah-regouane-unsplash.webp";
 import { useNavigate } from "react-router-dom";
 import { motion } from "motion/react";
 import DiscountModal from "../components/DiscountModal";
@@ -18,7 +18,8 @@ function HomePage() {
           src={barbercut}
           width="3853"
           height="5780"
-          loading="lazy"
+          loading="eager"
+          fetchPriority="high"
           className="h-auto max-h-[70vh] w-full max-w-sm rounded-lg object-cover shadow-2xl"
         />
         <div className="min-w-0">

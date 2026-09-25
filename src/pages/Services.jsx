@@ -1,10 +1,10 @@
 import { Fragment } from "react";
-import beardtrim from "../assets/allef-vinicius-unsplash.jpg";
-import beardcut from "../assets/antonio-reynoso-unsplash.jpg";
-import classichaircut from "../assets/michael-demoya-unsplash.jpg";
-import kidscut from "../assets/sinval-carvalh-unsplash.jpg";
-import premiumhaircut from "../assets/andrea-donato-unsplash.jpg";
-import chiskop from "../assets/stefan-schauberger-unsplash.jpg";
+import beardtrim from "../assets/allef-vinicius-unsplash.webp";
+import beardcut from "../assets/antonio-reynoso-unsplash.webp";
+import classichaircut from "../assets/michael-demoya-unsplash.webp";
+import kidscut from "../assets/sinval-carvalh-unsplash.webp";
+import premiumhaircut from "../assets/andrea-donato-unsplash.webp";
+import chiskop from "../assets/stefan-schauberger-unsplash.webp";
 import { motion } from "motion/react";
 
 function ServicesPage() {

@@ -1,7 +1,7 @@
-import aboutimage from "../assets/nathon-oski-unsplash.jpg";
-import barberone from "../assets/jeppe-monster-unsplash.jpg";
-import barbertwo from "../assets/delfina-pan-unsplash.jpg";
-import barberthree from "../assets/nate-johnston-unsplash.jpg";
+import aboutimage from "../assets/nathon-oski-unsplash.webp";
+import barberone from "../assets/jeppe-monster-unsplash.webp";
+import barbertwo from "../assets/delfina-pan-unsplash.webp";
+import barberthree from "../assets/nate-johnston-unsplash.webp";
 import { motion } from "motion/react";
 
 function AboutPage() {
@@ -15,7 +15,8 @@ function AboutPage() {
             src={aboutimage}
             width="4288"
             height="2848"
-            loading="lazy"
+            loading="eager"
+            fetchPriority="high"
             className="h-auto w-full max-w-sm rounded-lg object-cover shadow-2xl"
           />
           <div className="min-w-0">
