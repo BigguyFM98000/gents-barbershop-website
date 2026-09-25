@@ -1,11 +1,15 @@
 import barbercut from "../assets/salah-regouane-unsplash.jpg";
 import { useNavigate } from "react-router-dom";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
+import DiscountModal from "../components/DiscountModal";
+import { Fragment } from "react";
 
 function HomePage() {
   const navigate = useNavigate();
 
   return (
+    <Fragment>
+      <DiscountModal/>
     <div className="hero min-w-0 bg-base-200 px-2 py-8 sm:px-6">
       <div className="hero-content min-w-0 flex-col lg:flex-row-reverse">
         <motion.img
@@ -36,6 +40,7 @@ function HomePage() {
         </div>
       </div>
     </div>
+    </Fragment>
   );
 }
 
